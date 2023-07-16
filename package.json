@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://yukin0927.github.io/history",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +17,7 @@
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "react-youtube": "^10.1.0",
     "redux": "^4.2.1",
     "redux-actions": "^3.0.0",
     "redux-persist": "^6.0.0",

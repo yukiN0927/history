@@ -1,24 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Top from "./page/Top";
+import * as React from "react";
+import ListItemMenu from "./common/ListItemMenu";
+import Grid from "@mui/material/Grid";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { page } = useSelector((state) => state.history);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container spacing={2}>
+      <Grid item xs={2}>
+        <ListItemMenu />
+      </Grid>
+      <Grid item xs={8}>
+        {page === "Top" && <Top />}
+      </Grid>
+    </Grid>
   );
 }
 
